@@ -232,9 +232,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfc85fb3ac6a18946a11f2857af5454c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player:
-    Name: Kachan
-    Level: 2
+  ListPlayer:
+  - Name: John
+    Level: 16
+    Health: 100
+  - Name: King
+    Level: 18
     Health: 150
 --- !u!1 &519420028
 GameObject:

@@ -98,7 +98,7 @@ public class HariKedua : MonoBehaviour
 
         //List
         Player player = ListPlayer.Find(element => element.Level > 15);
-        Debug.Log(player.Name);
+        Debug.Log(player.Level);
     }
 
     // Update is called once per frame
