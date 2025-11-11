@@ -30,6 +30,7 @@ public class Contoh : MonoBehaviour
         //Debug.Log("Dilarang");
         //}
 
+        //SWITCH
         //int ID = 2;
         //switch (ID)
         //{
@@ -47,6 +48,8 @@ public class Contoh : MonoBehaviour
 
     }
     //int bilangan = 0;
+
+    //FUNCTION
     public int bilangan(int bilangan1, int bilangan2, int bilangan3)
     {
         int result = bilangan1 + bilangan2 + bilangan3;
