@@ -150,7 +150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   squareMove12B: {fileID: 412240338}
   skor: 0
+  nyawa: 0
   TeksSkor: {fileID: 1017114911}
+  TeksNyawa: {fileID: 250579404}
 --- !u!4 &10117845
 Transform:
   m_ObjectHideFlags: 0
@@ -952,11 +954,12 @@ GameObject:
   m_Component:
   - component: {fileID: 659181033}
   - component: {fileID: 659181032}
-  - component: {fileID: 659181035}
   - component: {fileID: 659181034}
+  - component: {fileID: 659181035}
+  - component: {fileID: 659181036}
   m_Layer: 0
-  m_Name: Circle
-  m_TagString: Untagged
+  m_Name: Bola
+  m_TagString: BolaRintangan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1025,7 +1028,7 @@ Transform:
   m_GameObject: {fileID: 659181031}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.1712708, y: 1.0055363, z: 0}
+  m_LocalPosition: {x: -4.44, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1041,12 +1044,12 @@ Rigidbody2D:
   m_GameObject: {fileID: 659181031}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1068,7 +1071,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: fb5a5ad357fa9f54293af4f032a4e9ef, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1094,6 +1097,21 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &659181036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659181031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29534762cfb9faa41abcb11fd7e4a796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaksi12B: {fileID: 10117844}
+  kecepatan: 5
+  intervalGantiArah: 2
 --- !u!1 &779472496
 GameObject:
   m_ObjectHideFlags: 0

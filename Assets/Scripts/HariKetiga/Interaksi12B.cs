@@ -6,7 +6,9 @@ public class Interaksi12B : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public SquareMove12B squareMove12B;
     public int skor;
+    public int nyawa;
     public TMP_Text TeksSkor;
+    public TMP_Text TeksNyawa;
     void Start()
     {
         

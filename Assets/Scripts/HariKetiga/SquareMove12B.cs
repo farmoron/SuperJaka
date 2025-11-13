@@ -10,7 +10,7 @@ public class SquareMove12B : MonoBehaviour
     public float kecepatan = 5.0f;                  //Mendeklarasikan variabel kecepatan dengan tipe data float bernilai 5
     void Start()
     {
-        
+        interaksi12B.TeksNyawa.text = "Nyawa = " + 5;
     }
 
     // Update is called once per frame
@@ -57,6 +57,11 @@ public class SquareMove12B : MonoBehaviour
             interaksi12B.skor++;
             TambahSkor();
         }
+        if (collision.gameObject.CompareTag("BolaRintangan"))
+        {
+            interaksi12B.nyawa--;
+            SistemNyawa();
+        }
     }
 
     public void TambahSkor()
@@ -65,11 +70,11 @@ public class SquareMove12B : MonoBehaviour
     }
     public void SistemNyawa()
     {
-        
+        interaksi12B.TeksNyawa.text = "Nyawa = " + interaksi12B.nyawa.ToString(); //Menambahkan Skor ketika kotak menabrak dinding
     }
     
 }
-public enum ArahGerakB      //Mendeklarasikan function ArahGerakB
+public enum ArahGerakB      //Memberikan nilai enum pada ArahGerakB
     {
         atas,
         bawah,
